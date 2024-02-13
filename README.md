@@ -53,4 +53,35 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
     ---add more food items here
     }
 ```
-3. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
+3. go to you qb-smallresources\server\consumables.lua and copy and past the [consumables.md](consumables.md) ----------- / Eat
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Add to consumables.md example !!!
+```
+	local QBCore = exports['qb-core']:GetCoreObject()
+----------- / alcohol
+
+for k, _ in pairs(Config.Consumables.alcohol) do
+    QBCore.Functions.CreateUseableItem(k, function(source, item)
+        TriggerClientEvent('consumables:client:DrinkAlcohol', source, item.name)
+    end)
+end
+
+----------- / Eat
+
+for k, _ in pairs(Config.Consumables.eat) do
+    QBCore.Functions.CreateUseableItem(k, function(source, item)
+        local Player = QBCore.Functions.GetPlayer(source)
+        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
+        TriggerClientEvent('consumables:client:Eat', source, item.name)
+    end)
+end
+---Add your Food Items Belowe here
+QBCore.Functions.CreateUseableItem("atom_junkie", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:Eat", source, item.name)
+    end
+end)
+
+---Add More Food items here
+```
