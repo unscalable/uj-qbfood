@@ -33,12 +33,11 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 	['blueberries'] 		 		= {['name'] = 'blueberries', 	    		['label'] = 'Blueberries', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberries.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
 	['blueberry_pie'] 		 		= {['name'] = 'blueberry_pie', 				['label'] = 'Blueberry Pie', 			['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberry_pie.png', 		["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
   -- Add more food items here
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Contributing
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------3. Contributing
 
-If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
+3.If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
 
-## License
+3. License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+3. This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
