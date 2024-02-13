@@ -93,6 +93,8 @@ Config.Consumables = {
     },
 }
 ```
+5. Add all the images in [pic](pic) to your inventory\html\images
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Contributing
 
 If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
