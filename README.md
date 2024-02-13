@@ -31,6 +31,7 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```lua
+ #Example#!!!!
  QBShared = QBShared or {}
  QBShared.Items = {
     -- WEAPONS
