@@ -13,9 +13,67 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 ## Installation
 
 1. Ensure you have a working installation of [QBcore](https://github.com/qbcore-framework/qb-core).
-2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
-3. ---------------------------------------------------
-![Like This](https://raw.githubusercontent.com/unscalable/uj-qbfood/main/Screenshot%202024-02-13%20141935.png)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- Define food items in Lua
+local foodItems = {
+    ['atom_junkie'] = {
+        ['name'] = 'atom_junkie',
+        ['label'] = 'Atom Junkie',
+        ['weight'] = 100,
+        ["decay"] = nil,
+        ['type'] = 'item',
+        ['image'] = 'atom_junkie.png',
+        ["created"] = nil,
+        ["delete"] = true,
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = ''
+    },
+    ['bacon_eggs'] = {
+        ['name'] = 'bacon_eggs',
+        ['label'] = 'Bacon n Eggs',
+        ['weight'] = 100,
+        ["decay"] = nil,
+        ['type'] = 'item',
+        ['image'] = 'bacon_eggs.png',
+        ["created"] = nil,
+        ["delete"] = true,
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = ''
+    },
+    -- Add more food items here
+}
+
+-- Example 
+local markdownContent = "# Food Items\n\nBelow is a list of food items:\n\n"
+for itemName, itemInfo in pairs(foodItems) do
+    markdownContent = markdownContent .. "## " .. itemInfo['label'] .. "\n\n"
+    markdownContent = markdownContent .. "- **Name**: " .. itemInfo['name'] .. "\n"
+    markdownContent = markdownContent .. "- **Label**: " .. itemInfo['label'] .. "\n"
+    markdownContent = markdownContent .. "- **Weight**: " .. itemInfo['weight'] .. "\n"
+    markdownContent = markdownContent .. "- **Type**: " .. itemInfo['type'] .. "\n"
+    markdownContent = markdownContent .. "- **Image**: ![" .. itemInfo['image'] .. "](../images/" .. itemInfo['image'] .. ")\n"
+    markdownContent = markdownContent .. "- **Delete**: " .. tostring(itemInfo['delete']) .. "\n"
+    markdownContent = markdownContent .. "- **Useable**: " .. tostring(itemInfo['useable']) .. "\n"
+    markdownContent = markdownContent .. "- **Should Close**: " .. tostring(itemInfo['shouldClose']) .. "\n\n"
+end
+
+-- Write Markdown content to a file
+local file = io.open("items.lua.md", "w")
+file:write(markdownContent)
+file:close()
+
+print("Markdown file 'items.lua.md' generated successfully.")
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ## Contributing
