@@ -1,4 +1,3 @@
- --food
 QBCore.Functions.CreateUseableItem("atom_junkie", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
