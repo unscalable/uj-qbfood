@@ -1,12 +1,4 @@
 
-
-3. License
-
-3. This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-
 # uj-qbfood
 
 # QBcore Food Addon Script
@@ -104,3 +96,7 @@ Config.Consumables = {
 # Contributing
 
 If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
+
+# License
+
+ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
