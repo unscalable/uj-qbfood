@@ -52,6 +52,7 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 
     -- Add your code here
  }
+ 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Go to your qb-smallresources\server\consumables and copy and past the [consumables](consumables) Whers it says in the #Example#!!!! 
