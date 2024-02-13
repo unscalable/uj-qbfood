@@ -32,12 +32,8 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 	['bacon_eggs'] 		    		= {['name'] = 'bacon_eggs', 	    		['label'] = 'Bacon n Eggs', 	    	['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'bacon_eggs.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
 	['blueberries'] 		 		= {['name'] = 'blueberries', 	    		['label'] = 'Blueberries', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberries.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
 	['blueberry_pie'] 		 		= {['name'] = 'blueberry_pie', 				['label'] = 'Blueberry Pie', 			['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberry_pie.png', 		["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
-   },
-    -- Add more food items here
-}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
+  -- Add more food items here
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Contributing
 
 If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
