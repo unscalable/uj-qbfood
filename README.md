@@ -30,11 +30,11 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 
 2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Add to shared.lua 
+# Add to shared.lua example !!!
 ```
 	QBShared = QBShared or {}
     QBShared.Items = {
-    -- Other Tools
+        -- Other Tools
     casinochips                  = { name = 'casinochips', label = 'Casino Chips', weight = 0, type = 'item', image = 'casinochips.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Chips For Casino Gambling' },
     stickynote                   = { name = 'stickynote', label = 'Sticky note', weight = 0, type = 'item', image = 'stickynote.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Sometimes handy to remember something :)' },
     moneybag                     = { name = 'moneybag', label = 'Money Bag', weight = 0, type = 'item', image = 'moneybag.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A bag with cash' },
