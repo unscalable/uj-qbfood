@@ -31,16 +31,8 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```lua
- --food
-    ['atom_junkie'] 		 		= {['name'] = 'atom_junkie', 	    		['label'] = 'Atom Junkie', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'atom_junkie.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
-    ['bacon_eggs'] 		    		= {['name'] = 'bacon_eggs', 	    		['label'] = 'Bacon n Eggs', 	    	['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'bacon_eggs.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
- exmaple :
  QBShared = QBShared or {}
-QBShared.Items = {
+ QBShared.Items = {
     -- WEAPONS
     -- Melee
     weapon_unarmed               = { name = 'weapon_unarmed', label = 'Fists', weight = 1000, type = 'weapon', ammotype = nil, image = 'placeholder.png', unique = true, useable = false, description = 'Fisticuffs' },
@@ -423,6 +415,7 @@ QBShared.Items = {
     newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
     newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
     newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
+ }
 
  -- Add your code here
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
