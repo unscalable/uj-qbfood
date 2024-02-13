@@ -1,4 +1,4 @@
---food
+        --food
         ["atom_junkie"] = math.random(35, 54),
         ["bacon_eggs"] = math.random(35, 54), 
         ["blueberries"] = math.random(35, 54), 
