@@ -53,3 +53,4 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
     ---add more food items here
     }
 ```
+3. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
