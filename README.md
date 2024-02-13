@@ -1,6 +1,4 @@
-3. Contributing
 
-3.If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
 
 3. License
 
@@ -103,3 +101,6 @@ Config.Consumables = {
     },
 }
 ```
+# Contributing
+
+If you'd like to contribute to the development of this script, feel free to fork the repository and submit a pull request with your changes. Bug fixes, feature enhancements, and documentation improvements are all welcome!
