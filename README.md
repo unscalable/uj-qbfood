@@ -14,6 +14,7 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 
 1. Ensure you have a working installation of [QBcore](https://github.com/qbcore-framework/qb-core).
 2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
+![Like this](/path/to/image.jpg)
 
 
 ## Contributing
