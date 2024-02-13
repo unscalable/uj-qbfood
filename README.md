@@ -28,12 +28,12 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 1. Ensure you have a working installation of [QBcore](https://github.com/qbcore-framework/qb-core).
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-3. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
+2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-```lua
-#item.lua example#!!!!
- QBShared = QBShared or {}
- QBShared.Items = {
+# Add to shared.lua 
+```
+	QBShared = QBShared or {}
+    QBShared.Items = {
     -- Other Tools
     casinochips                  = { name = 'casinochips', label = 'Casino Chips', weight = 0, type = 'item', image = 'casinochips.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Chips For Casino Gambling' },
     stickynote                   = { name = 'stickynote', label = 'Sticky note', weight = 0, type = 'item', image = 'stickynote.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Sometimes handy to remember something :)' },
@@ -48,31 +48,5 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
     newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
     newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
     newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
- }
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  #Install exmaple#--
-  exmaple :
-  QBShared = QBShared or {}
-  QBShared.Items = {
-    -- Other Tools
-    casinochips                  = { name = 'casinochips', label = 'Casino Chips', weight = 0, type = 'item', image = 'casinochips.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Chips For Casino Gambling' },
-    stickynote                   = { name = 'stickynote', label = 'Sticky note', weight = 0, type = 'item', image = 'stickynote.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Sometimes handy to remember something :)' },
-    moneybag                     = { name = 'moneybag', label = 'Money Bag', weight = 0, type = 'item', image = 'moneybag.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A bag with cash' },
-    parachute                    = { name = 'parachute', label = 'Parachute', weight = 30000, type = 'item', image = 'parachute.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'The sky is the limit! Woohoo!' },
-    binoculars                   = { name = 'binoculars', label = 'Binoculars', weight = 600, type = 'item', image = 'binoculars.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Sneaky Breaky...' },
-    lighter                      = { name = 'lighter', label = 'Lighter', weight = 0, type = 'item', image = 'lighter.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'On new years eve a nice fire to stand next to' },
-    certificate                  = { name = 'certificate', label = 'Certificate', weight = 0, type = 'item', image = 'certificate.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Certificate that proves you own certain stuff' },
-    markedbills                  = { name = 'markedbills', label = 'Marked Money', weight = 1000, type = 'item', image = 'markedbills.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Money?' },
-    labkey                       = { name = 'labkey', label = 'Key', weight = 500, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Key for a lock...?' },
-    printerdocument              = { name = 'printerdocument', label = 'Document', weight = 500, type = 'item', image = 'printerdocument.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A nice document' },
-    newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
-    newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
-    newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
-    --add your food item below here
-    ['atom_junkie'] 		 		= {['name'] = 'atom_junkie', 	    		['label'] = 'Atom Junkie', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'atom_junkie.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
-    ['bacon_eggs'] 		    		= {['name'] = 'bacon_eggs', 	    		['label'] = 'Bacon n Eggs', 	    	['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'bacon_eggs.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
-    ['blueberries'] 		 		= {['name'] = 'blueberries', 	    		['label'] = 'Blueberries', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberries.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
-    ['blueberry_pie'] 		 		= {['name'] = 'blueberry_pie', 				['label'] = 'Blueberry Pie', 			['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberry_pie.png', 		["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,    ['description'] = ''},
-    -- Add more food items here
- }
----------------------------------------------
+    }
+```
