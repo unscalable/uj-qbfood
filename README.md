@@ -28,13 +28,12 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 1. Ensure you have a working installation of [QBcore](https://github.com/qbcore-framework/qb-core).
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
+3. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```lua
- #example#!!!
+#item.lua example#!!!!
  QBShared = QBShared or {}
  QBShared.Items = {
-    
     -- Other Tools
     casinochips                  = { name = 'casinochips', label = 'Casino Chips', weight = 0, type = 'item', image = 'casinochips.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Chips For Casino Gambling' },
     stickynote                   = { name = 'stickynote', label = 'Sticky note', weight = 0, type = 'item', image = 'stickynote.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Sometimes handy to remember something :)' },
@@ -49,14 +48,15 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
     newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
     newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
     newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
-
-    -- Add your code here
-    #example#!!!
-    --food
-    ['atom_junkie'] 		 		= {['name'] = 'atom_junkie', 	    		['label'] = 'Atom Junkie', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'atom_junkie.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
  }
-
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-2. go to you qb-core\shared\item/lua and copy and past the [items.lua.md](items.lua.md) at the buttome
+
+ exmaple :
+ ['atom_junkie'] 		 		= {['name'] = 'atom_junkie', 	    		['label'] = 'Atom Junkie', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'atom_junkie.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+	['bacon_eggs'] 		    		= {['name'] = 'bacon_eggs', 	    		['label'] = 'Bacon n Eggs', 	    	['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'bacon_eggs.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+	['blueberries'] 		 		= {['name'] = 'blueberries', 	    		['label'] = 'Blueberries', 				['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberries.png', 			["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+	['blueberry_pie'] 		 		= {['name'] = 'blueberry_pie', 				['label'] = 'Blueberry Pie', 			['weight'] = 100, 	["decay"] = nil,	['type'] = 'item', 		['image'] = 'blueberry_pie.png', 		["created"] = nil, 	["delete"] = true,		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+  -- Add more food items here
+---------------------------------------------
