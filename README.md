@@ -55,7 +55,7 @@ Welcome to the QBcore Food Addon Script! This script adds a variety of food-rela
 ```
 3. go to you qb-smallresources\server\consumables.lua and copy and past the [consumables.md](consumables.md) ----------- / Eat
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Add to consumables.md example !!!
+# Add to consumables.lua example !!!
 ```
 	local QBCore = exports['qb-core']:GetCoreObject()
 ----------- / alcohol
@@ -84,4 +84,22 @@ QBCore.Functions.CreateUseableItem("atom_junkie", function(source, item)
 end)
 
 ---Add More Food items here
+```
+4. go to you qb-smallresources\config/lua and copy and past the [consumables.md](consumables.md) at Config.Consumables = {
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Add to config.lua example !!!
+```
+Config.Consumables = {
+    eat = { 
+        -- default food items
+        ['sandwich'] = math.random(35, 54),
+        ['tosti'] = math.random(40, 50),
+        ['twerks_candy'] = math.random(35, 54),
+        ['snikkel_candy'] = math.random(40, 50),
+        --add your config code here
+        --uj-qbfood
+        ["atom_junkie"] = math.random(35, 54),
+        ---add the reste here 
+    },
+}
 ```
